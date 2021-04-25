@@ -6,6 +6,7 @@
     <title>Web Studio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
 
 <link rel="stylesheet" href="./css/styles.css">
@@ -44,7 +45,13 @@
     <section class="hero">
       <div class="container">
         <h1>Эффективные решения<br>для вашего бизнеса</h1>
-        <a href="">Заказать услугу</a>
+        <button data-modal-open>Заказать услугу</button>
+        <div class="backdrop is-hidden"> 
+          <div class="modal" data-modal>
+            <p></p>
+            <button data-modal-close>Закрыть</button>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -54,21 +61,21 @@
         <!-- <h2>Особенности</h2> -->
         <ul class="feature-list">
           <li class="item">
-            <div class="feature-icon"><svg class="icon" width="65px" height="70px"> 
+            <div class="feature-icon"><svg class="icon" width="70px" height="70px"> 
               <use href="./images/sprite.svg#icon-Group"></use>
             </svg></div>
             <h3>Внимание к деталям</h3>
             <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
           </li>
           <li class="item">
-            <div class="feature-icon"><svg class="icon" width="67px" height="70px"> 
+            <div class="feature-icon"><svg class="icon" width="70px" height="70px"> 
               <use href="./images/sprite.svg#icon-clock"></use>
             </svg></div>
             <h3>Пунктуальность</h3>
             <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
           </li>
           <li class="item">
-            <div class="feature-icon"><svg class="icon" width="70px" height="54px"> 
+            <div class="feature-icon"><svg class="icon" width="70px" height="70px"> 
               <use href="./images/sprite.svg#icon-diagram"></use>
             </svg></div>
             <h3>Планирование</h3>
@@ -90,9 +97,15 @@
       <div class="container">
         <h2>Чем мы занимаемся</h2>
         <ul class="employment-list">
-          <li class="item"><a href=""><img src="./images/img1..jpg" alt="Десктопные приложения"></a></li>
-          <li class="item"><a href=""><img src="./images/img2..jpg" alt="Мобильные приложения"></a></li>
-          <li class="item"><a href=""><img src="./images/img3..jpg" alt="Дизайнерские решения"></a></li>
+          <li class="item"><a href=""><img src="./images/img1..jpg" alt="Десктопные приложения"></a>
+          <p class="label">Десктопные приложения</p>
+          </li>
+          <li class="item"><a href=""><img src="./images/img2..jpg" alt="Мобильные приложения"></a>
+          <p class="label">Мобильные приложения</p>
+          </li>
+          <li class="item"><a href=""><img src="./images/img3..jpg" alt="Дизайнерские решения"></a>
+          <p class="label">Дизайнерские решения</p>
+          </li>
         </ul>
       </div>
     </section>
@@ -353,5 +366,6 @@
       </section>
     </div>
   </footer>
+  <script src="./js/modal.js"></script>
 </body>
 </html>

@@ -119,6 +119,7 @@
     
     justify-content: center;
     align-items: center;
+    fill: var(--secondary-text-color);
   }
   .link-contacts:hover .icon,
   .link-contacts:focus .icon{
@@ -245,6 +246,22 @@
   
   .employment-list .item:not(:last-child) {
     margin-right: 30px;
+  }
+  .label{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--hover-button-text-color);
+    background: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    width: 370px;
+    height: 70px;
   }
   
   /* Наша команда */
@@ -492,6 +509,10 @@
   
   .content .item:not(:nth-last-child(-n + 3)) {
     margin-bottom: 30px;
+  }
+  .content .item:focus,
+   .content .item:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
   
   .content .card-description {
