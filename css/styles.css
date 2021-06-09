@@ -499,8 +499,8 @@
     align-items: center;
   }
   
-  .content-box {
-    flex-basis: calc(100% / 3 - 70px)
+  .content-box:not(:last-child) {
+    margin-right: 70px;
   }
   .join{
 
