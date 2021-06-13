@@ -701,19 +701,17 @@ transition: transform 700ms ease-in-out 300ms;
   
   .content .item{
     overflow: hidden;
-    
-    transition: color  250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow  250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     
   }
   .item-link:hover,
   .item-link:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    
+    transition: color  250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow  250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .content .item:hover .overlay,
-  .content .item:focus .overlay{
+  .content .item-link:hover .overlay,
+  .content .item-link:focus .overlay{
     transform: translatey(0);
   }
   
